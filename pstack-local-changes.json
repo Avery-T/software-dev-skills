@@ -119,11 +119,11 @@
     },
     {
       "path": "skills/poteto-help/SKILL.md",
-      "git_blob_sha": "bbbb305f91d19fb758799ba15a535a58f0ff5c14",
-      "bytes": 13679,
+      "git_blob_sha": "addc3b92bf33cd527542951dbff231fe067715dc",
+      "bytes": 13982,
       "mode": "100644",
       "upstream_git_blob_sha": "789227c04cd66c137b15dbb6767139ebc7828586",
-      "reason": "Use the shared model policy before delegation and remove conflicting model-selection or diversity assumptions where present."
+      "reason": "Use the shared model policy before delegation and remove conflicting model-selection or diversity assumptions where present. Document private-plugin host differences and label optional unbundled skill references."
     },
     {
       "path": "skills/poteto-mode/SKILL.md",
@@ -410,6 +410,342 @@
       "git_blob_sha": "d45e51676110c7d7132356c0ea3e1b5301c31e44",
       "bytes": 6419,
       "mode": "100644"
+    },
+    {
+      "path": "skills/architect/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/arena/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/benchmark-checklist/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/blast-radius/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/bro/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/correct/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/figure-it-out/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/how/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/in-your-own-words/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/interrogate/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/ketchup/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/no-comments/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/poteto-help/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/poteto-mode/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-attack-the-premise/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-boundary-discipline/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-build-the-lever/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-encode-lessons-in-structure/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-exhaust-the-design-space/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-experience-first/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-explain-the-number/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-fix-root-causes/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-foundational-thinking/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-guard-the-context-window/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-laziness-protocol/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-make-operations-idempotent/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-migrate-callers-then-delete-legacy-apis/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-minimize-reader-load/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-model-the-domain/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-never-block-on-the-human/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-outcome-oriented-execution/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-prove-it-works/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-redesign-from-first-principles/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-separate-before-serializing-shared-state/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-sequence-verifiable-units/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-subtract-before-you-add/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-test-behavior-not-implementation/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/principle-type-system-discipline/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/recall/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/reflect/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/sharpen/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/show-me-your-work/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/swarm/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/tdd/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/teach/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/technical-writing/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/unslop/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
+    },
+    {
+      "path": "skills/why/agents/openai.yaml",
+      "git_blob_sha": "5b1f887a9138416870f64ba2fe21602e4a59cfa7",
+      "bytes": 43,
+      "mode": "100644",
+      "reason": "Preserve upstream explicit invocation policy in OpenAI plugin metadata."
     }
   ]
 }

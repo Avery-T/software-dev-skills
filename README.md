@@ -105,3 +105,7 @@ python3 -m unittest discover -s tests -v
 ```
 
 The verifier checks unchanged upstream hashes, explicitly recorded local modifications, additions, executable modes, and complete skill folders. Tests exercise exact model selection, unavailable-model fallback, effort handling, call restrictions, panels, family checks, and import-integrity failures. The helper consumes supplied runtime facts; it does not discover models, spawn workers, or prove a real harness executed a selection.
+
+## Private ChatGPT/Codex plugin
+
+This repository is also the source package for **Software Development Skills**. [PLUGIN.md](PLUGIN.md) explains installation, supported host behavior, the reproducible ZIP build, and updates to the saved private release. The package includes all 49 skills and their supporting files. Repository edits do not automatically update an installed plugin.

@@ -26,6 +26,8 @@ For model, budget, availability, or setup questions, read [`model-configuration`
 
 ## Get set up
 
+For the private ChatGPT/Codex package, first read [plugin installation and host compatibility](../../PLUGIN.md). Cursor slash commands, Custom Modes, and named subagent types below are not universal host features. Use the controls actually available in the current host.
+
 1. Follow this collection's [README](../../README.md), copying complete skill folders and required companions into the harness's skill directory. Always include `model-configuration` with delegated workflows.
 2. Use [`model-configuration`](../model-configuration/SKILL.md) to inspect or change preferences. It reuses existing pstack role files and adds a portable project override. Optional upstream `/setup-pstack` is not bundled.
 3. Start a task with `/poteto-mode`, a goal, and a check that can pass or fail.
@@ -58,31 +60,31 @@ The default answer is `/poteto-mode`, which runs most of the others when its ste
 | Understand a change or subsystem, explained plainly | [`/teach`](../teach/SKILL.md) |
 | Catch up on their own recent work on a topic | [`/recall`](../recall/SKILL.md) |
 | Catch up on what changed in this chat since their last message, in plain words and small visuals, with every item waiting on them listed and decidable from the reply alone | [`/ketchup`](../ketchup/SKILL.md) |
-| Catch up like `/ketchup`, in a short subtitled video of slides, with the waiting calls as text under it | [`/ketchup-video`](../ketchup-video/SKILL.md) |
+| Catch up like `/ketchup`, in a short subtitled video of slides, with the waiting calls as text under it | `/ketchup-video` (optional upstream skill; not bundled) |
 | Know what a small diff could break outside itself | [`/blast-radius`](../blast-radius/SKILL.md) |
 | Settle types and module shape before code that crosses a function boundary | [`/architect`](../architect/SKILL.md) |
 | Get several attempts at one brief, merged into the best one | [`/arena`](../arena/SKILL.md) |
 | Run parallel checks over slices, or race workers, as cloud agents | [`/swarm`](../swarm/SKILL.md) |
 | Have configured reviewers try to break a diff | [`/interrogate`](../interrogate/SKILL.md) |
 | Fix a bug test-first when a cheap local test exists | [`/tdd`](../tdd/SKILL.md) |
-| Apply TypeScript rules to `.ts` or `.tsx` work | [`/typescript-best-practices`](../typescript-best-practices/SKILL.md) |
+| Apply TypeScript rules to `.ts` or `.tsx` work | `/typescript-best-practices` (optional upstream skill; not bundled) |
 | Strip comments before review, using a reviewer that didn't write them | [`/no-comments`](../no-comments/SKILL.md) |
 | Clean AI tells out of prose | [`/unslop`](../unslop/SKILL.md) |
 | Write docs, an RFC, a README, a PR description, or a commit message to a standard | [`/technical-writing`](../technical-writing/SKILL.md) |
 | Hear the last reply again in plain words | [`/bro`](../bro/SKILL.md) |
-| Give agents a scripted way to drive the app and prove behavior | [`/create-verification-skill`](../create-verification-skill/SKILL.md) |
-| Bring a verification skill and its feature map back in line with the app | [`/maintain-verification-skill`](../maintain-verification-skill/SKILL.md) |
-| Formally verify a race, invariant, or other property that tests rarely reach | [`/create-formal-verification-skill`](../create-formal-verification-skill/SKILL.md) |
-| Bring a formal verification back in line after the code it covers changed, and learn whether a failure is drift or a bug | [`/maintain-formal-verification-skill`](../maintain-formal-verification-skill/SKILL.md) |
-| Show a PM or designer what the user sees as a chart checked by a TLA+ model, with the shortest path to each state that breaks a rule | [`/statechart`](../statechart/SKILL.md) |
+| Give agents a scripted way to drive the app and prove behavior | `/create-verification-skill` (optional upstream skill; not bundled) |
+| Bring a verification skill and its feature map back in line with the app | `/maintain-verification-skill` (optional upstream skill; not bundled) |
+| Formally verify a race, invariant, or other property that tests rarely reach | `/create-formal-verification-skill` (optional upstream skill; not bundled) |
+| Bring a formal verification back in line after the code it covers changed, and learn whether a failure is drift or a bug | `/maintain-formal-verification-skill` (optional upstream skill; not bundled) |
+| Show a PM or designer what the user sees as a chart checked by a TLA+ model, with the shortest path to each state that breaks a rule | `/statechart` (optional upstream skill; not bundled) |
 | Vet a performance number before reporting or acting on it | [`/benchmark-checklist`](../benchmark-checklist/SKILL.md) |
 | Run a large or cross-cutting change, or one to review after stepping away | [`/figure-it-out`](../figure-it-out/SKILL.md) |
 | Keep a decision log during a run, and review it afterward | [`/show-me-your-work`](../show-me-your-work/SKILL.md) |
 | Pick a model for each role and a reasoning budget | [`model-configuration`](../model-configuration/SKILL.md) |
-| Turn their own working habits into a personal mode skill | [`/automate-me`](../automate-me/SKILL.md) |
+| Turn their own working habits into a personal mode skill | `/automate-me` (optional upstream skill; not bundled) |
 | Turn what a finished task taught into skill edits | [`/reflect`](../reflect/SKILL.md) |
 | Stop agents from repeating the same mistakes in this repo | [`/correct`](../correct/SKILL.md) |
-| Build a page whose buttons wake a Grok Bot over a webhook | [`/make-bot-ui`](../make-bot-ui/SKILL.md) |
+| Build a page whose buttons wake a Grok Bot over a webhook | `/make-bot-ui` (optional upstream skill; not bundled) |
 | Find their way around pstack | `/poteto-help` |
 
 If a skill directory next to this one is missing from the table, read its frontmatter and route by its description. The `principle-*` directories are covered under principles below.
@@ -136,7 +138,7 @@ For a run that drifts, [`references/prompting.md`](references/prompting.md) has 
 
 ## Make pstack my own
 
-- [`/automate-me`](../automate-me/SKILL.md) drafts a personal mode skill from the user's own history, to use alongside `/poteto-mode`.
+- `/automate-me` (optional upstream skill; not bundled) drafts a personal mode skill from the user's own history, to use alongside `/poteto-mode`.
 - [`/reflect`](../reflect/SKILL.md) after a session turns its lessons into skill edits the user approves.
 - `/poteto-mode write a skill for <workflow>` runs the authoring playbook. The eval playbook tests a skill change blind.
 - Fix a misbehaving skill in its own PR, not inside the feature work where it went wrong.

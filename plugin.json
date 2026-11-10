@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "software-development-skills",
+  "version": "0.1.0",
+  "description": "49 software-development skills, selected pstack workflows, and shared model configuration from Avery-T/software-dev-skills.",
+  "author": { "name": "Avery-T" },
+  "repository": "https://github.com/Avery-T/software-dev-skills",
+  "license": "MIT",
+  "keywords": ["software-development", "code-review", "architecture", "testing", "pstack"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Software Development Skills",
+        "shortDescription": "Plan, build, test, review",
+        "longDescription": "A private, skills-only package containing 49 software-development skills from Avery-T/software-dev-skills. Includes architecture, investigation, implementation, testing, review, writing, reusable principles, and the complete supporting files. Shared model configuration preserves the collection's Astra/high oversight preference and Sol 6.1 worker preference, subject to the current host's actual capabilities and permissions. No MCP server or external account connection is included.",
+        "developerName": "Avery-T",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Use poteto-help to show me which software-development skill fits my task.",
+          "Use poteto-mode to plan, implement, and verify this change.",
+          "Use model-configuration to inspect this collection's model preferences."
+        ]
+      }
+    }
+  }
+}
