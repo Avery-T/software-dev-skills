@@ -6,6 +6,10 @@ disable-model-invocation: true
 
 # Interrogate
 
+## Model configuration
+
+Before choosing a model or delegating work, read [model-configuration](../model-configuration/SKILL.md). It owns role resolution, availability checks, reasoning effort, fallback, and model-diversity disclosures for this workflow, including nested calls.
+
 Adversaries try to break a change or a design. A finding survives only when a run proves it. Report the findings. Do not apply fixes.
 
 ## Frame

@@ -6,6 +6,10 @@ disable-model-invocation: true
 
 # Show me your work
 
+## Model configuration
+
+Before choosing a model or delegating work, read [model-configuration](../model-configuration/SKILL.md). It owns role resolution, availability checks, reasoning effort, fallback, and model-diversity disclosures for this workflow, including nested calls.
+
 Keep one canonical log.
 
 ## The format
@@ -64,14 +68,14 @@ Correct the log, not the story. The audit never edits or removes a row, even an 
 
 ## Cross-model review of the trail
 
-Before handing back, spawn a subagent on a different model family from the one that did the work. Self-review is not a substitute. The subagent reads the audit trail and the run's transcript, then flags what the user should pay attention to. Not a redo of the work, a scan for what's suboptimal or risky. Pick each subagent's reasoning level and fast or standard speed for the job, per the Subagents section of the **poteto-mode** skill.
+Before handing back, resolve a reviewer through **model-configuration**. Prefer a verified different-family entry from `arena cross-judge pool`. If none is available, use the configured `subagents` role for a separate review and explicitly label it same-family or family-unverified. Never claim cross-model review in that case. If no subagent can run, do a current-session review and label it self-review. The reviewer reads the audit trail and permitted transcript or session digest, then flags what the user should pay attention to.
 
 - Decisions logged with weak or absent evidence.
 - Verification steps skipped or claimed without proof in the transcript.
 - Choices that look risky in hindsight (premature, scope-creeping, papering over a symptom).
 - Gaps the user would otherwise miss on a casual skim.
 
-Every reply for a run that produced a trail ends with an "Attention" section. Lead with the reviewer's model on its own line (`reviewed by <model>`), then list each flag pointing to specific rows or moments. "No flags" is a valid value. The model name is not.
+Every reply for a run that produced a trail ends with an "Attention" section. Lead with the reviewer's model on its own line (`reviewed by <model>`), then list each flag pointing to specific rows or moments. "No flags" is a valid value. If the runtime hides model identity, say `reviewed by current session model; exact identity not exposed`. State any missing independent or cross-family review.
 
 ## Reviewing the trail
 

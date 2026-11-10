@@ -1,5 +1,8 @@
 ### Authoring or modifying a skill
 
+Before any delegation, read [model-configuration](../../model-configuration/SKILL.md) and resolve the role named by this playbook, or `subagents` when none is named. This applies to nested workflows too.
+
+
 **You own the skill's voice.**
 
 1. Use your skill-authoring skill: **create-skill** in Cursor (built in), or Anthropic's `skill-creator` elsewhere. With neither, follow the Agent Skills format at agentskills.io.

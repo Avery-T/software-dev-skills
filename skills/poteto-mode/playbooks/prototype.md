@@ -1,5 +1,8 @@
 ### Prototype
 
+Before any delegation, read [model-configuration](../../model-configuration/SKILL.md) and resolve the role named by this playbook, or `subagents` when none is named. This applies to nested workflows too.
+
+
 **You own the design decision, not the code. The prototype is a throwaway instrument. The real build follows Feature.**
 
 The one playbook where the Laziness Protocol's "smallest change" and the verification bar invert. Speed over polish, code quality does not matter, no planning. The rigor is in picking the right design cheaply. Propose variations the user didn't ask for, throw an approach away and try another.

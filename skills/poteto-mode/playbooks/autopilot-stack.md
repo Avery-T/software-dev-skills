@@ -1,5 +1,8 @@
 ### Autopilot-stack
 
+Before any delegation, read [model-configuration](../../model-configuration/SKILL.md) and resolve the role named by this playbook, or `subagents` when none is named. This applies to nested workflows too.
+
+
 Run the Autopilot-full playbook, but do not merge.
 
 1. **In place of step 5, stop at verified.** Stop when each PR is verified and green at its current head, then hand the PRs to the operator. After the handoff, nobody pushes without the operator's go. Every loop tick prompt names this file, so each tick sees the no-merge rule.

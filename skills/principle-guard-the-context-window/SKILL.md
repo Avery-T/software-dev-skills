@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Guard the Context Window
 
+Before any delegation or model comparison, read [model-configuration](../model-configuration/SKILL.md) and resolve the chosen workflow's roles there.
+
 **Why:** Context overflow degrades reasoning quality, creates compression artifacts, and halts progress.
 
 **Pattern:**

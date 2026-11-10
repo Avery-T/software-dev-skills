@@ -5,6 +5,8 @@ disable-model-invocation: true
 ---
 # Build the Lever
 
+Before any delegation or model comparison, read [model-configuration](../model-configuration/SKILL.md) and resolve the chosen workflow's roles there.
+
 When the work isn't trivial, build the tool that does it instead of doing it by hand.
 
 A codemod, generator, or script does the work the same way every time and reruns for free. The tool is one artifact a reviewer can read and rerun to check the work. Hand-done changes can only be re-verified by redoing them. A deterministic script turns "trust me" into "run this".

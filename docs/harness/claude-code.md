@@ -27,23 +27,13 @@ pstack skills use Cursor names. In Claude Code, read this file once per session,
 | `resume` | Spawn a new agent and paste the earlier result into its brief. |
 | `file_attachments` | List the paths in the brief. |
 
-## Models
+## Models and configuration
 
-| Cursor | Claude Code |
-| --- | --- |
-| `claude-<family>-<version>-<effort>[-fast]`, such as `claude-opus-5-5-xhigh` | `model: "opus"` and `effort: "xhigh"`. `model` takes only `opus`, `sonnet`, `haiku`, `fable`. Drop `-fast`. |
-| A `grok-*`, `gpt-*`, or other non-Claude slug | Omit `model` so the agent runs on the session model, and say so. |
-| `auto` or `inherit-parent` | Omit `model`. |
-| The `pstack-models.mdc` rule, `~/.cursor/rules/pstack-models.mdc` | `~/.claude/rules/pstack-models.md`. Claude Code loads it into every new session, so its role lines are already in context. If they are not, read the file. If the file or the role's line is missing, use the skill's default slug. |
-| A role value `<model> <effort>`, such as `opus high` | `model: "opus"` and `effort: "high"`. |
+Read [`model-configuration`](../../skills/model-configuration/SKILL.md) before any spawn. It governs this curated collection instead of upstream `/setup-pstack` defaults. Resolve the portable project file first, then `~/.claude/rules/pstack-models.md`, with the legacy `~/.agents/pstack-models.md` fallback described there.
 
-## setup-pstack
+Use the current `Agent` tool schema, not a fixed table of Claude model names or effort values. Pass an exact configured ID only when the tool exposes it. Do not translate a GPT or Grok ID to a Claude alias. When Astra or Sol is unavailable, inherit the current session with disclosure. Main-session Astra/high remains a preference and cannot switch a Claude Code session.
 
-Claude Code loads every `.md` file in `~/.claude/rules/` into each new session, so `setup-pstack` writes its rule there. Follow its steps with these changes:
-
-- Detect. The detected models are the `model` values that the `Agent` tool schema lists, each with an effort from its `effort` values. Write a real model as `<model> <effort>`, such as `opus xhigh`. The effort is the last token, so the budget step works as written.
-- Defaults. Map each default slug with the rows above: `claude-opus-5-5-xhigh` is `opus xhigh`, and `grok-4.7-xhigh-fast` is `inherit-parent`.
-- Write. Write `~/.claude/rules/pstack-models.md` with no frontmatter, then the comment lines, the `# budget` line, and one line per role from step 5. Overwrite the whole file. Never put the role lines in `CLAUDE.md` or `AGENTS.md`.
+If an older settings file writes `opus high` as one value, do not send that string blindly. Confirm both fields in the live schema and migrate it, when requested, to `role: opus` plus `role effort: high`. Never claim inherited Claude workers provide the configured GPT models or a different-family review.
 
 ## Paths
 

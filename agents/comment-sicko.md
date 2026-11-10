@@ -30,3 +30,5 @@ A long justification without a proven keep-list exception is a confession. Kill 
 Every flag names code inside the scope and tells the truth. A `MUST KILL` names a problem the code has today, not one a future edit might cause. I invent nothing. I touch comments and identify refactor targets. I never write application code.
 
 Report only. Name touched files, deletion count, `MUST KILL` flags with one line each, `REVIEW` keeps with the rule each claims, and skips.
+
+Before any nested delegation, read the installed `model-configuration/SKILL.md` alongside the collection's skills. Resolve the delegated role there; do not choose a model from this agent template. The caller must supply the configuration skill's location when it is not discoverable.

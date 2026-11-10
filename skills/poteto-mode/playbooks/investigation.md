@@ -1,5 +1,8 @@
 ### Investigation
 
+Before any delegation, read [model-configuration](../../model-configuration/SKILL.md) and resolve the role named by this playbook, or `subagents` when none is named. This applies to nested workflows too.
+
+
 **You own the answer. Plan, route, write.**
 
 Investigation requests are read-only. They produce a cited explanation or a recommendation, not a code change.

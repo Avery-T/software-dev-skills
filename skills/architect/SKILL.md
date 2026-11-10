@@ -6,6 +6,10 @@ disable-model-invocation: true
 
 # Architect
 
+## Model configuration
+
+Before choosing a model or delegating work, read [model-configuration](../model-configuration/SKILL.md). It owns role resolution, availability checks, reasoning effort, fallback, and model-diversity disclosures for this workflow, including nested calls.
+
 Sketch types, function signatures, class shapes, and module boundaries with `not implemented` bodies and pseudocode. Synthesize across multiple model perspectives, then fill in code against the chosen sketch.
 
 ## Start
@@ -28,7 +32,7 @@ Skip Phase A only when the work is genuinely greenfield with no surrounding syst
 
 Run the **arena** skill with the design-sketch task and the Phase A grounding artifacts. Pass `references/runner-prompt.md` as each runner's prompt.
 
-Take the runners from the `architect runners` line in the pstack settings file (`~/.cursor/rules/pstack-models.mdc` in Cursor, `~/.claude/rules/pstack-models.md` in Claude Code, `~/.agents/pstack-models.md` in other harnesses), in place of the `arena runners` line. If the file or that line is missing, use `claude-opus-5-5-xhigh` and `grok-4.7-xhigh-fast`. Alias and rejected entries follow the runner rules in the **arena** skill's Phase A.
+Resolve `architect runners` through **model-configuration** in place of `arena runners`. Apply Arena's independent-workspace and candidate-count rules; repeated model entries provide alternative designs, not multiple model families.
 
 Design it twice. Require at least two structurally distinct candidates before synthesis, even when the first looks sufficient. This is the **exhaust-the-design-space** principle skill made concrete. Whole-shape alternatives, not point fixes inside one shape.
 

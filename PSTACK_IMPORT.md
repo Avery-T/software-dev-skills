@@ -6,7 +6,7 @@ Imported from [backnotprop/pstack](https://github.com/backnotprop/pstack) at com
 
 The 34 requested entries resolve to 32 distinct skills. All matched. “design space” and “exhause the design space” select the same principle. “fix root cause” appears twice.
 
-This import contains 48 complete skill folders: the 32 selected skills and 16 companions. Every upstream file is unchanged, including the MIT license, scripts, lockfile, templates, and executable modes. Supporting guide pages, images, and agent prompts are included.
+This import contains 48 complete skill folders: the 32 selected skills and 16 companions. The original import was byte-for-byte unchanged. This collection now has deliberate model-configuration edits recorded separately in `pstack-local-changes.json`; the source hashes in `pstack-import.json` remain unchanged. The MIT license, bundled TypeScript scripts, and lockfile remain intact. Supporting guide pages, images, and agent prompts are included.
 
 ## Name mapping
 
@@ -56,7 +56,7 @@ This import contains 48 complete skill folders: the 32 selected skills and 16 co
 
 ## Optional upstream skills
 
-The unmodified help catalog and guide also describe optional skills that are not included here. Their relative links can point outside this selected collection. They are not missing requested skills or mandatory workflow dependencies. Use their pinned source links when reading about them:
+The help catalog and guide also describe optional skills that are not included here. Their relative links can point outside this selected collection. They are not missing requested skills or mandatory workflow dependencies. Use their pinned source links when reading about them:
 
 - [automate-me](https://github.com/backnotprop/pstack/tree/08547969e1dffaa6457ea65141cc62c1d9a2eef1/skills/automate-me)
 - [create-formal-verification-skill](https://github.com/backnotprop/pstack/tree/08547969e1dffaa6457ea65141cc62c1d9a2eef1/skills/create-formal-verification-skill)
@@ -69,7 +69,7 @@ The unmodified help catalog and guide also describe optional skills that are not
 - [statechart](https://github.com/backnotprop/pstack/tree/08547969e1dffaa6457ea65141cc62c1d9a2eef1/skills/statechart)
 - [typescript-best-practices](https://github.com/backnotprop/pstack/tree/08547969e1dffaa6457ea65141cc62c1d9a2eef1/skills/typescript-best-practices)
 
-`setup-pstack` configures model preferences, but the workflow skills supply defaults when its settings file is absent. `typescript-best-practices` is supplementary syntax guidance linked by the type-system principle. The remaining skills are optional help routes. External `cursor-team-kit` skills and harness-specific commands are not bundled; upstream documents fallbacks.
+The added `model-configuration` skill owns model preferences in this collection and reads the same role settings format. Optional upstream `setup-pstack` is not bundled and does not preserve this collection's oversight or separate effort fields. `typescript-best-practices` is supplementary syntax guidance linked by the type-system principle. The remaining skills are optional help routes. External `cursor-team-kit` skills and harness-specific commands are not bundled; upstream documents fallbacks.
 
 ## Runtime boundaries
 
@@ -77,6 +77,10 @@ Importing these files does not run or install their scripts, register a plugin, 
 
 ## Verify or update
 
-Run `python3 scripts/verify_pstack_import.py` from the repository. It checks the recorded file hashes, modes, complete skill folders, and unique skill names.
+Run `python3 scripts/verify_pstack_import.py` from the repository. It checks unchanged source files against upstream hashes and deliberately modified files against their recorded local hashes, plus additions, modes, complete skill folders, and unique skill names. Run `python3 -m unittest discover -s tests -v` for resolver and verification behavior.
 
-`pstack-import.json` records every source file's Git blob SHA and the source commit. To update, audit the next source commit and its dependency graph, copy the same selected folders plus any required companions, preserve the license, update the manifest, then run the verifier. Do not replace this selected collection with all upstream files without reviewing the scope.
+`pstack-import.json` records every source file's Git blob SHA and the source commit. To update, audit the next source commit and its dependency graph, copy the same selected folders plus any required companions, preserve the license, and update the upstream manifest only for the new source. Reapply and review the model-configuration changes, then regenerate their local hashes in `pstack-local-changes.json` and run the verifier and tests. Do not replace this selected collection with all upstream files without reviewing the scope.
+
+## Local model-configuration changes
+
+See [the README change map](README.md#where-the-pstack-skills-were-changed) for exact paths and behavior. `pstack-local-changes.json` records the original and current Git blob SHA, size, mode, and reason for each imported file changed locally. New skill files are listed separately. Upstream content policy in the original manifest describes the import baseline, not the current customized files.
